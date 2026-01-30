@@ -8,17 +8,17 @@ public class User
     [MaxLength(16)]
     public String Id { get; set; } = string.Empty;
 
-    [Required (ErrorMessage = "El nonbre es obligatorio" ]
+    [Required (ErrorMessage = "El nombre es obligatorio" )]
     [MaxLength(25, ErrorMessage = "El nombre no puede tener mas de 25 carácteres.")]
     public string Name { get; set; } = string.Empty;
 
-    [Required (ErrorMessage = "El apellido es obligatorio" ]
+    [Required (ErrorMessage = "El apellido es obligatorio" )]
     [MaxLength(25, ErrorMessage = "El apellido no puede tener mas de 25 carácteres.")]
     public string Surname { get; set; } = string.Empty;
 
-    [Required (ErrorMessage = "El nonbre de usuario es obligatorio" ]
+    [Required (ErrorMessage = "El nombre de usuario es obligatorio")]
     [MaxLength(25, ErrorMessage = "El nombre de usuario no puede tener mas de 25 carácteres.")]
-    public string User Name { get; set; } = string.Empty;
+    public string Username { get; set; } = string.Empty;
 
     [Required]
     [EmailAddress(ErrorMessage = "El correo electrónico no tiene un formato válido.")]
@@ -35,7 +35,7 @@ public class User
     public DateTime CreateAt { get; set; }
     public DateTime UpdateAt { get; set; }
 
-    public UserProfeile UserProfile { get; set; } = null!;
+    public UserProfile UserProfile { get; set; } = null!;
     public ICollection<UserRole> UserRoles { get; set; } = [];
 
     public UserEmail UserEmail { get; set; } = null!;
