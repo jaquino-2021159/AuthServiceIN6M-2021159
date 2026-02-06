@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace AuthServiceIN6BM.Persistence.Repositories;
 
-public class RoleRepository(ApplicationDbContext context) : IRoleRespository
+public class RoleRepository(ApplicationDbContext context) : IRoleRepository
 {
     public async Task<Role?> GetByNameAsync(string roleName)
     {

@@ -10,3 +10,15 @@ C:\Users\Informatica\Downloads\AuthServiceIN6BM\src\AuthServiceIN6BM.Domain\obj\
 C:\Users\Informatica\Downloads\AuthServiceIN6BM\src\AuthServiceIN6BM.Domain\obj\Debug\net8.0\refint\AuthServiceIN6BM.Domain.dll
 C:\Users\Informatica\Downloads\AuthServiceIN6BM\src\AuthServiceIN6BM.Domain\obj\Debug\net8.0\AuthServiceIN6BM.Domain.pdb
 C:\Users\Informatica\Downloads\AuthServiceIN6BM\src\AuthServiceIN6BM.Domain\obj\Debug\net8.0\ref\AuthServiceIN6BM.Domain.dll
+C:\AuthServiceIN6M-2021159\AuthServiceIN6BM\src\AuthServiceIN6BM.Domain\bin\Debug\net8.0\AuthServiceIN6BM.Domain.deps.json
+C:\AuthServiceIN6M-2021159\AuthServiceIN6BM\src\AuthServiceIN6BM.Domain\bin\Debug\net8.0\AuthServiceIN6BM.Domain.dll
+C:\AuthServiceIN6M-2021159\AuthServiceIN6BM\src\AuthServiceIN6BM.Domain\bin\Debug\net8.0\AuthServiceIN6BM.Domain.pdb
+C:\AuthServiceIN6M-2021159\AuthServiceIN6BM\src\AuthServiceIN6BM.Domain\obj\Debug\net8.0\AuthServiceIN6BM.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\AuthServiceIN6M-2021159\AuthServiceIN6BM\src\AuthServiceIN6BM.Domain\obj\Debug\net8.0\AuthServiceIN6BM.Domain.AssemblyInfoInputs.cache
+C:\AuthServiceIN6M-2021159\AuthServiceIN6BM\src\AuthServiceIN6BM.Domain\obj\Debug\net8.0\AuthServiceIN6BM.Domain.AssemblyInfo.cs
+C:\AuthServiceIN6M-2021159\AuthServiceIN6BM\src\AuthServiceIN6BM.Domain\obj\Debug\net8.0\AuthServiceIN6BM.Domain.csproj.CoreCompileInputs.cache
+C:\AuthServiceIN6M-2021159\AuthServiceIN6BM\src\AuthServiceIN6BM.Domain\obj\Debug\net8.0\AuthServiceIN6BM.Domain.sourcelink.json
+C:\AuthServiceIN6M-2021159\AuthServiceIN6BM\src\AuthServiceIN6BM.Domain\obj\Debug\net8.0\AuthServiceIN6BM.Domain.dll
+C:\AuthServiceIN6M-2021159\AuthServiceIN6BM\src\AuthServiceIN6BM.Domain\obj\Debug\net8.0\refint\AuthServiceIN6BM.Domain.dll
+C:\AuthServiceIN6M-2021159\AuthServiceIN6BM\src\AuthServiceIN6BM.Domain\obj\Debug\net8.0\AuthServiceIN6BM.Domain.pdb
+C:\AuthServiceIN6M-2021159\AuthServiceIN6BM\src\AuthServiceIN6BM.Domain\obj\Debug\net8.0\ref\AuthServiceIN6BM.Domain.dll

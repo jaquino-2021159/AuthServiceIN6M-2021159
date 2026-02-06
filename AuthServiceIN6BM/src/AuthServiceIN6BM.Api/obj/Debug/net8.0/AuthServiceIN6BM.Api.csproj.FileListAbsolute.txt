@@ -38,3 +38,14 @@ C:\Users\Informatica\Downloads\AuthServiceIN6BM\src\AuthServiceIN6BM.Api\obj\Deb
 C:\Users\Informatica\Downloads\AuthServiceIN6BM\src\AuthServiceIN6BM.Api\obj\Debug\net8.0\AuthServiceIN6BM.Api.pdb
 C:\Users\Informatica\Downloads\AuthServiceIN6BM\src\AuthServiceIN6BM.Api\obj\Debug\net8.0\AuthServiceIN6BM.Api.genruntimeconfig.cache
 C:\Users\Informatica\Downloads\AuthServiceIN6BM\src\AuthServiceIN6BM.Api\obj\Debug\net8.0\ref\AuthServiceIN6BM.Api.dll
+C:\AuthServiceIN6M-2021159\AuthServiceIN6BM\src\AuthServiceIN6BM.Api\obj\Debug\net8.0\AuthServiceIN6BM.Api.csproj.AssemblyReference.cache
+C:\AuthServiceIN6M-2021159\AuthServiceIN6BM\src\AuthServiceIN6BM.Api\obj\Debug\net8.0\AuthServiceIN6BM.Api.GeneratedMSBuildEditorConfig.editorconfig
+C:\AuthServiceIN6M-2021159\AuthServiceIN6BM\src\AuthServiceIN6BM.Api\obj\Debug\net8.0\AuthServiceIN6BM.Api.AssemblyInfoInputs.cache
+C:\AuthServiceIN6M-2021159\AuthServiceIN6BM\src\AuthServiceIN6BM.Api\obj\Debug\net8.0\AuthServiceIN6BM.Api.AssemblyInfo.cs
+C:\AuthServiceIN6M-2021159\AuthServiceIN6BM\src\AuthServiceIN6BM.Api\obj\Debug\net8.0\AuthServiceIN6BM.Api.csproj.CoreCompileInputs.cache
+C:\AuthServiceIN6M-2021159\AuthServiceIN6BM\src\AuthServiceIN6BM.Api\obj\Debug\net8.0\AuthServiceIN6BM.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\AuthServiceIN6M-2021159\AuthServiceIN6BM\src\AuthServiceIN6BM.Api\obj\Debug\net8.0\AuthServiceIN6BM.Api.MvcApplicationPartsAssemblyInfo.cache
+C:\AuthServiceIN6M-2021159\AuthServiceIN6BM\src\AuthServiceIN6BM.Api\obj\Debug\net8.0\AuthServiceIN6BM.Api.sourcelink.json
+C:\AuthServiceIN6M-2021159\AuthServiceIN6BM\src\AuthServiceIN6BM.Api\obj\Debug\net8.0\AuthServiceIN6BM.Api.dll
+C:\AuthServiceIN6M-2021159\AuthServiceIN6BM\src\AuthServiceIN6BM.Api\obj\Debug\net8.0\refint\AuthServiceIN6BM.Api.dll
+C:\AuthServiceIN6M-2021159\AuthServiceIN6BM\src\AuthServiceIN6BM.Api\obj\Debug\net8.0\AuthServiceIN6BM.Api.pdb

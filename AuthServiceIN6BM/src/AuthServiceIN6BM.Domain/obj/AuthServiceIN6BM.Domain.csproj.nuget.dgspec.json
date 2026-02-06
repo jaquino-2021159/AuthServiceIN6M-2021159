@@ -10,11 +10,11 @@
         "projectUniqueName": "C:\\AuthServiceIN6M-2021159\\AuthServiceIN6BM\\src\\AuthServiceIN6BM.Domain\\AuthServiceIN6BM.Domain.csproj",
         "projectName": "AuthServiceIN6BM.Domain",
         "projectPath": "C:\\AuthServiceIN6M-2021159\\AuthServiceIN6BM\\src\\AuthServiceIN6BM.Domain\\AuthServiceIN6BM.Domain.csproj",
-        "packagesPath": "C:\\Users\\Informatica\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\elaqu\\.nuget\\packages\\",
         "outputPath": "C:\\AuthServiceIN6M-2021159\\AuthServiceIN6BM\\src\\AuthServiceIN6BM.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Informatica\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\elaqu\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"

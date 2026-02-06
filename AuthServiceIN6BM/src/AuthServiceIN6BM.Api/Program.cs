@@ -2,27 +2,27 @@ using AuthServiceIN6BM.Persistence.Data;
 using AuthServiceIN6BM.Api.Extensions;
 using AuthServiceIN6BM.Api.ModelBinders;
 using Serilog;
-using Microsoft.AspnNetCore.Hosting.Server;
+using Microsoft.AspNetCore.Hosting.Server;
 using Microsoft.AspNetCore.Hosting.Server.Features;
-using System.Runtime.Serialization;
-using System.Security.Cryptography.X509Certificates;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.host.UserSerilog((Context, services, loggerConfiguration) =>
-    loggerConfiguration
-        .ReadFrom.Configuration(Context.Configuration)
-        .ReadFrom.Services(services));
+builder.host.UseSerilog((context, services, loggerConfiguration) => loggerConfiguration
+.ReadFrom.configuration(context.Configuration)
+.ReadFrom.SErvices(services));
+
+
 builder.Services.AddControllers(options =>
 {
-    options.ModelBinderProvider.Insert(0, new FileDataModelBinderProvider());
+    options.ModelBinderProvider.Insert(0, new FileDataBinderProvider());
 })
 .AddJsonOptions(o =>
 {
-    object.JsonSerializerOptions.PropertyNamingPolicy = System.Text.Json.JsonNamingPolicy.CamelCase;
+    o.JsonSerializerOptions.PropertyNamingPolicy = System.Text.Json.JsonNamingPolicy.CamelCase;
 });
 
-builder.Services.AddApplicationServices(builder.configuration);
+builder.Services.AddApplicationService(builder.configuration);
 
 var app = builder.Build();
 
@@ -32,7 +32,6 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
 // Add Serilog request logging
 app.UseSerilogRequestLogging();
 
@@ -60,26 +59,24 @@ app.UseSecurityHeaders(policies => policies
     .AddCustomHeader("Cache-Control", "no-store, no-cache, must-revalidate, private")
 );
 
-
-// Global exception handling
+//Global exception handling
 
 // Core middLewares
-app.UseHttpsRendirection();
-app.UseCors("DefaultCorsPolicy");
-app.UseRateLimiter();
-app.UseAuthentication();
-app.UseAuthorization();
-
+app.UseHttpsRedirection();
+app.UserCors("DefaultCorsPolicy");
+ //   app.UserRateLimiter();
+ //   app.UserAuthentication();
+ //   app.UserAuthorization();
 app.MapControllers();
+app.MapHelthChechks("/health");
 
-app.MapHelthChecks("/health");
 
 app.MapGet("/health", () =>
 {
     var response = new
     {
         status = "Healthy",
-        timestamps = DateTime.UtcNow.ToString("yyyy-MM-ddTHH:mm:ss.fff2")
+        timestamps = DateTime.UtcNow.ToString("yyyy-MM-ddTHH:mm:ss.fffZ")
     };
     return Results.ok(response);
 });

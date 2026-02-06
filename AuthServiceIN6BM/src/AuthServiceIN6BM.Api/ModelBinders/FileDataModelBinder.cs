@@ -1,5 +1,3 @@
-
-using System.Reflection.Metadata.Ecma335;
 using AuthServiceIN6BM.Api.Models;
 using AuthServiceIN6BM.Application.Interfaces;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
@@ -8,17 +6,18 @@ namespace AuthServiceIN6BM.Api.ModelBinders;
 
 public class FileDataModelBinder : IModelBinder
 {
-    public Task BinModelAsyn(ModelBindingContext bindingContext)
+    public Task BindModelAsync(ModelBindingContext bindingContext)
     {
-        ArgumentNullException.ThrowIfNull(brindingContext);
-
+        ArgumentNullException.ThrowIfNull(bindingContext);
         if (!typeof(IFileData).IsAssignableFrom(bindingContext.ModelType))
         {
             return Task.CompletedTask;
         }
 
         var request = bindingContext.HttpContext.Request;
-        var file = request.Form.Files.GetFile(bindingContext.FieldName);
+
+        var file = request.From.Files.GetFiles(bindingContext.FileName);
+
         if (file != null && file.Length > 0)
         {
             var fileData = new FormFileAdapter(file);
@@ -28,13 +27,13 @@ public class FileDataModelBinder : IModelBinder
         {
             bindingContext.Result = ModelBindingResult.Success(null);
         }
-
         return Task.CompletedTask;
     }
 
 }
 
-public class FileDataModelBinderProvider : IModelBinderProvider
+
+public class FileDataModelBinderProvinder : IModelBinderProvider
 {
     public IModelBinder? GetBinder(ModelBinderProviderContext context)
     {
@@ -42,6 +41,6 @@ public class FileDataModelBinderProvider : IModelBinderProvider
         {
             return new FileDataModelBinder();
         }
-        return null;
+        return null; 
     }
 }

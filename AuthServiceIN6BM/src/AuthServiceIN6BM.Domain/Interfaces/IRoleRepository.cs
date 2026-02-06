@@ -1,7 +1,7 @@
 using AuthServiceIN6BM.Domain.Entities;
 namespace AuthServiceIN6BM.Domain.Interfaces;
 
-public interface IRoleRespository
+public interface IRoleRepository
 {
     Task<Role?> GetByNameAsync(string name);
     Task<int> CountUsersInRoleAsync(string roleName);

@@ -3062,7 +3062,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Informatica\\.nuget\\packages\\": {}
+    "C:\\Users\\elaqu\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -3070,11 +3070,11 @@
       "projectUniqueName": "C:\\AuthServiceIN6M-2021159\\AuthServiceIN6BM\\src\\AuthServiceIN6BM.Persistence\\AuthServiceIN6BM.Persistence.csproj",
       "projectName": "AuthServiceIN6BM.Persistence",
       "projectPath": "C:\\AuthServiceIN6M-2021159\\AuthServiceIN6BM\\src\\AuthServiceIN6BM.Persistence\\AuthServiceIN6BM.Persistence.csproj",
-      "packagesPath": "C:\\Users\\Informatica\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\elaqu\\.nuget\\packages\\",
       "outputPath": "C:\\AuthServiceIN6M-2021159\\AuthServiceIN6BM\\src\\AuthServiceIN6BM.Persistence\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Informatica\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\elaqu\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
