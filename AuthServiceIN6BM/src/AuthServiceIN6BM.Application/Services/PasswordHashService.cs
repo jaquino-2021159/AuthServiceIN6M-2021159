@@ -15,17 +15,18 @@ public class PasswordHashService : IPasswordHashService
 
     public string HashPassword(string password)
     {
-        var salt = new byte[SaltSize];
+        var salt = new Byte[SaltSize];
         using (var rng = RandomNumberGenerator.Create())
         {
             rng.GetBytes(salt);
         }
+
         var argon2 = new Argon2id(Encoding.UTF8.GetBytes(password))
         {
             Salt = salt,
             DegreeOfParallelism = Parallelism,
             Iterations = Iterations,
-            MemorySize = Memory,
+            MemorySize = Memory
         };
 
         var hash = argon2.GetBytes(HashSize);
@@ -35,31 +36,29 @@ public class PasswordHashService : IPasswordHashService
 
         return $"$argon2id$v=19$m={Memory},t={Iterations},p={Parallelism}${saltBase64}${hashBase64}";
     }
+
     public bool VerifyPassword(string password, string hashedPassword)
     {
         try
         {
-            if (hashedPassword.StartsWith("$argon2id$"))
+            if(hashedPassword.StartsWith("$argon2id$"))
             {
-                Console.WriteLine("[DEBUG] Using Argon2 standard format verication");
+                Console.WriteLine("[DEBUG] Using Argon2 standard format verification");
                 var result = VerifyArgon2StandardFormat(password, hashedPassword);
                 Console.WriteLine($"[DEBUG] Verification result: {result}");
                 return result;
             }
             else
             {
-                Console.WriteLine("[DEBUG] Using legacy Argon2 format verication");
+                Console.WriteLine("[DEBUG] Using legacy format verification");
                 return VerifyLegacyFormat(password, hashedPassword);
             }
-
         }
-        catch (Exception ex)
+        catch(Exception ex)
         {
-
-            Console.WriteLine($"[DEBUG] Exception verifying password: {ex.Message}");
+            Console.WriteLine($"[DEBUG] Exception in VerifyPassword: {ex.Message}");
             return false;
         }
-
     }
 
     private bool VerifyArgon2StandardFormat(string password, string hashedPassword)
@@ -67,7 +66,9 @@ public class PasswordHashService : IPasswordHashService
         try
         {
             var argon2Verifier = new Argon2id(Encoding.UTF8.GetBytes(password));
+
             var parts = hashedPassword.Split('$');
+
             var paramsPart = parts[3];
             var saltBase64 = parts[4];
             var hashBase64 = parts[5];
@@ -94,12 +95,13 @@ public class PasswordHashService : IPasswordHashService
         {
             Console.WriteLine($"Error verifying Argon2 standard formar: {ex.Message}");
             return false;
-
         }
     }
+
     private bool VerifyLegacyFormat(string password, string hashedPassword)
     {
         var hashBytes = Convert.FromBase64String(hashedPassword);
+
         var salt = new byte[SaltSize];
         var hash = new byte[HashSize];
 
@@ -121,7 +123,8 @@ public class PasswordHashService : IPasswordHashService
     private static string FromBase64UrlSafe(string base64UrlSafe)
     {
         string base64 = base64UrlSafe.Replace('-', '+').Replace('_', '/');
-        switch (base64.Length % 4)
+
+        switch(base64.Length % 4)
         {
             case 2:
                 base64 += "==";
@@ -129,9 +132,8 @@ public class PasswordHashService : IPasswordHashService
             case 3:
                 base64 += "=";
                 break;
-
         }
+
         return base64;
     }
-
 }

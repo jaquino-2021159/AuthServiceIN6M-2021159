@@ -34,7 +34,7 @@ public class RoleRepository(ApplicationDbContext context) : IRoleRepository
         return users;
     }
 
-    public async Task<IReadOnlyList<string>> GetUserRoleNameAsync(string userId)
+    public async Task<IReadOnlyList<string>> GetUserRoleNamesAsync(string userId)
     {
         var roles = await context.UserRoles
             .Include(ur => ur.Role)

@@ -1,4 +1,3 @@
-
 using System.ComponentModel.DataAnnotations;
 
 namespace AuthServiceIN6BM.Domain.Entities;
@@ -11,13 +10,13 @@ public class UserPasswordReset
 
     [Required]
     [MaxLength(16)]
-     public string UserId { get; set; } = string.Empty;
+    public string UserId { get; set; } = string.Empty;
 
-     [MaxLength(256)]
-     public string? PasswordResetToken { get; set; }
+    [MaxLength(256)]
+    public string? PasswordResetToken { get; set; }
 
-     public DateTime? PasswordResetTokenExpiry { get; set; }
+    public DateTime? PasswordResetTokenExpiry { get; set; }
 
-     [Required]
+    [Required]
     public User User { get; set; } = null!;
-} 
+}

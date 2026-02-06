@@ -1,4 +1,3 @@
-using System.Reflection.Metadata.Ecma335;
 using System.Security.Cryptography;
 using System.Text;
 
@@ -10,12 +9,12 @@ public static class UuidGenerator
 
     public static string GenerateShortUUID()
     {
-         using var rng = RandomNumberGenerator.Create();
-         var bytes = new byte[12];
-         rng.GetBytes(bytes);
+        using var rng = RandomNumberGenerator.Create();
+        var bytes = new byte[12];
+        rng.GetBytes(bytes);
 
-         var result = new StringBuilder(12);
-         for(int i = 0; i < 12; i++)
+        var result = new StringBuilder(12);
+        for(int i = 0; i < 12; i++)
         {
             result.Append(Alphabet[bytes[i] % Alphabet.Length]);
         }
@@ -35,11 +34,12 @@ public static class UuidGenerator
 
     public static bool IsValidUserId(string? id)
     {
-        if (string.IsNullOrEmpty(id))
+        if(string.IsNullOrEmpty(id))
             return false;
 
-        if (id.Length != 16 || !id.StartsWith("usr_"))
+        if(id.Length != 16 || !id.StartsWith("usr_"))
             return false;
+        
         var idPart = id[4..]; // obtener solo la parte despues del usr_
         return idPart.All(c => Alphabet.Contains(c));
     }

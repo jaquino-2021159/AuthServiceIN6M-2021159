@@ -1,32 +1,15 @@
-C:\Users\Informatica\Downloads\AuthServiceIN6BM\src\AuthServiceIN6BM.Application\bin\Debug\net8.0\AuthServiceIN6BM.Application.deps.json
-C:\Users\Informatica\Downloads\AuthServiceIN6BM\src\AuthServiceIN6BM.Application\bin\Debug\net8.0\AuthServiceIN6BM.Application.dll
-C:\Users\Informatica\Downloads\AuthServiceIN6BM\src\AuthServiceIN6BM.Application\bin\Debug\net8.0\AuthServiceIN6BM.Application.pdb
-C:\Users\Informatica\Downloads\AuthServiceIN6BM\src\AuthServiceIN6BM.Application\bin\Debug\net8.0\AuthServiceIN6BM.Domain.dll
-C:\Users\Informatica\Downloads\AuthServiceIN6BM\src\AuthServiceIN6BM.Application\bin\Debug\net8.0\AuthServiceIN6BM.Domain.pdb
-C:\Users\Informatica\Downloads\AuthServiceIN6BM\src\AuthServiceIN6BM.Application\obj\Debug\net8.0\AuthServiceIN6BM.Application.csproj.AssemblyReference.cache
-C:\Users\Informatica\Downloads\AuthServiceIN6BM\src\AuthServiceIN6BM.Application\obj\Debug\net8.0\AuthServiceIN6BM.Application.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Informatica\Downloads\AuthServiceIN6BM\src\AuthServiceIN6BM.Application\obj\Debug\net8.0\AuthServiceIN6BM.Application.AssemblyInfoInputs.cache
-C:\Users\Informatica\Downloads\AuthServiceIN6BM\src\AuthServiceIN6BM.Application\obj\Debug\net8.0\AuthServiceIN6BM.Application.AssemblyInfo.cs
-C:\Users\Informatica\Downloads\AuthServiceIN6BM\src\AuthServiceIN6BM.Application\obj\Debug\net8.0\AuthServiceIN6BM.Application.csproj.CoreCompileInputs.cache
-C:\Users\Informatica\Downloads\AuthServiceIN6BM\src\AuthServiceIN6BM.Application\obj\Debug\net8.0\AuthServiceIN6BM.Application.sourcelink.json
-C:\Users\Informatica\Downloads\AuthServiceIN6BM\src\AuthServiceIN6BM.Application\obj\Debug\net8.0\AuthServiceIN6BM.Application.csproj.CopyComplete
-C:\Users\Informatica\Downloads\AuthServiceIN6BM\src\AuthServiceIN6BM.Application\obj\Debug\net8.0\AuthServiceIN6BM.Application.dll
-C:\Users\Informatica\Downloads\AuthServiceIN6BM\src\AuthServiceIN6BM.Application\obj\Debug\net8.0\refint\AuthServiceIN6BM.Application.dll
-C:\Users\Informatica\Downloads\AuthServiceIN6BM\src\AuthServiceIN6BM.Application\obj\Debug\net8.0\AuthServiceIN6BM.Application.pdb
-C:\Users\Informatica\Downloads\AuthServiceIN6BM\src\AuthServiceIN6BM.Application\obj\Debug\net8.0\ref\AuthServiceIN6BM.Application.dll
-C:\AuthServiceIN6M-2021159\AuthServiceIN6BM\src\AuthServiceIN6BM.Application\bin\Debug\net8.0\AuthServiceIN6BM.Application.deps.json
-C:\AuthServiceIN6M-2021159\AuthServiceIN6BM\src\AuthServiceIN6BM.Application\bin\Debug\net8.0\AuthServiceIN6BM.Application.dll
-C:\AuthServiceIN6M-2021159\AuthServiceIN6BM\src\AuthServiceIN6BM.Application\bin\Debug\net8.0\AuthServiceIN6BM.Application.pdb
-C:\AuthServiceIN6M-2021159\AuthServiceIN6BM\src\AuthServiceIN6BM.Application\bin\Debug\net8.0\AuthServiceIN6BM.Domain.dll
-C:\AuthServiceIN6M-2021159\AuthServiceIN6BM\src\AuthServiceIN6BM.Application\bin\Debug\net8.0\AuthServiceIN6BM.Domain.pdb
-C:\AuthServiceIN6M-2021159\AuthServiceIN6BM\src\AuthServiceIN6BM.Application\obj\Debug\net8.0\AuthServiceIN6BM.Application.csproj.AssemblyReference.cache
-C:\AuthServiceIN6M-2021159\AuthServiceIN6BM\src\AuthServiceIN6BM.Application\obj\Debug\net8.0\AuthServiceIN6BM.Application.GeneratedMSBuildEditorConfig.editorconfig
-C:\AuthServiceIN6M-2021159\AuthServiceIN6BM\src\AuthServiceIN6BM.Application\obj\Debug\net8.0\AuthServiceIN6BM.Application.AssemblyInfoInputs.cache
-C:\AuthServiceIN6M-2021159\AuthServiceIN6BM\src\AuthServiceIN6BM.Application\obj\Debug\net8.0\AuthServiceIN6BM.Application.AssemblyInfo.cs
-C:\AuthServiceIN6M-2021159\AuthServiceIN6BM\src\AuthServiceIN6BM.Application\obj\Debug\net8.0\AuthServiceIN6BM.Application.csproj.CoreCompileInputs.cache
-C:\AuthServiceIN6M-2021159\AuthServiceIN6BM\src\AuthServiceIN6BM.Application\obj\Debug\net8.0\AuthServiceIN6BM.Application.sourcelink.json
-C:\AuthServiceIN6M-2021159\AuthServiceIN6BM\src\AuthServiceIN6BM.Application\obj\Debug\net8.0\AuthServ.D5C46F5C.Up2Date
-C:\AuthServiceIN6M-2021159\AuthServiceIN6BM\src\AuthServiceIN6BM.Application\obj\Debug\net8.0\AuthServiceIN6BM.Application.dll
-C:\AuthServiceIN6M-2021159\AuthServiceIN6BM\src\AuthServiceIN6BM.Application\obj\Debug\net8.0\refint\AuthServiceIN6BM.Application.dll
-C:\AuthServiceIN6M-2021159\AuthServiceIN6BM\src\AuthServiceIN6BM.Application\obj\Debug\net8.0\AuthServiceIN6BM.Application.pdb
-C:\AuthServiceIN6M-2021159\AuthServiceIN6BM\src\AuthServiceIN6BM.Application\obj\Debug\net8.0\ref\AuthServiceIN6BM.Application.dll
+C:\Proyectos 2026\AuthServiceIN6BM\src\AuthServiceIN6BM.Application\bin\Debug\net8.0\AuthServiceIN6BM.Application.deps.json
+C:\Proyectos 2026\AuthServiceIN6BM\src\AuthServiceIN6BM.Application\bin\Debug\net8.0\AuthServiceIN6BM.Application.dll
+C:\Proyectos 2026\AuthServiceIN6BM\src\AuthServiceIN6BM.Application\bin\Debug\net8.0\AuthServiceIN6BM.Application.pdb
+C:\Proyectos 2026\AuthServiceIN6BM\src\AuthServiceIN6BM.Application\bin\Debug\net8.0\AuthServiceIN6BM.Domain.dll
+C:\Proyectos 2026\AuthServiceIN6BM\src\AuthServiceIN6BM.Application\bin\Debug\net8.0\AuthServiceIN6BM.Domain.pdb
+C:\Proyectos 2026\AuthServiceIN6BM\src\AuthServiceIN6BM.Application\obj\Debug\net8.0\AuthServiceIN6BM.Application.csproj.AssemblyReference.cache
+C:\Proyectos 2026\AuthServiceIN6BM\src\AuthServiceIN6BM.Application\obj\Debug\net8.0\AuthServiceIN6BM.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Proyectos 2026\AuthServiceIN6BM\src\AuthServiceIN6BM.Application\obj\Debug\net8.0\AuthServiceIN6BM.Application.AssemblyInfoInputs.cache
+C:\Proyectos 2026\AuthServiceIN6BM\src\AuthServiceIN6BM.Application\obj\Debug\net8.0\AuthServiceIN6BM.Application.AssemblyInfo.cs
+C:\Proyectos 2026\AuthServiceIN6BM\src\AuthServiceIN6BM.Application\obj\Debug\net8.0\AuthServiceIN6BM.Application.csproj.CoreCompileInputs.cache
+C:\Proyectos 2026\AuthServiceIN6BM\src\AuthServiceIN6BM.Application\obj\Debug\net8.0\AuthServ.D5C46F5C.Up2Date
+C:\Proyectos 2026\AuthServiceIN6BM\src\AuthServiceIN6BM.Application\obj\Debug\net8.0\AuthServiceIN6BM.Application.dll
+C:\Proyectos 2026\AuthServiceIN6BM\src\AuthServiceIN6BM.Application\obj\Debug\net8.0\refint\AuthServiceIN6BM.Application.dll
+C:\Proyectos 2026\AuthServiceIN6BM\src\AuthServiceIN6BM.Application\obj\Debug\net8.0\AuthServiceIN6BM.Application.pdb
+C:\Proyectos 2026\AuthServiceIN6BM\src\AuthServiceIN6BM.Application\obj\Debug\net8.0\ref\AuthServiceIN6BM.Application.dll

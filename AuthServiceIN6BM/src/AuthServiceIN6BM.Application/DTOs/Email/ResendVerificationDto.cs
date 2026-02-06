@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace AuthServiceIN6BM.Application.DTOs.Email;
 
-public class ResendVericationDto
+public class ResendVerificationDto
 {
     [Required]
     [EmailAddress]

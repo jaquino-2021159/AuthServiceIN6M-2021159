@@ -1,3 +1,4 @@
+
 using AuthServiceIN6BM.Persistence.Data;
 using AuthServiceIN6BM.Api.Extensions;
 using AuthServiceIN6BM.Api.ModelBinders;
@@ -5,24 +6,23 @@ using Serilog;
 using Microsoft.AspNetCore.Hosting.Server;
 using Microsoft.AspNetCore.Hosting.Server.Features;
 
-
 var builder = WebApplication.CreateBuilder(args);
 
-builder.host.UseSerilog((context, services, loggerConfiguration) => loggerConfiguration
-.ReadFrom.configuration(context.Configuration)
-.ReadFrom.SErvices(services));
-
+builder.Host.UseSerilog((context, services, loggerConfiguration) =>
+    loggerConfiguration
+        .ReadFrom.Configuration(context.Configuration)
+        .ReadFrom.Services(services));
 
 builder.Services.AddControllers(options =>
 {
-    options.ModelBinderProvider.Insert(0, new FileDataBinderProvider());
+    options.ModelBinderProviders.Insert(0, new FileDataModelBinderProvider());
 })
 .AddJsonOptions(o =>
 {
     o.JsonSerializerOptions.PropertyNamingPolicy = System.Text.Json.JsonNamingPolicy.CamelCase;
 });
 
-builder.Services.AddApplicationService(builder.configuration);
+builder.Services.AddApplicationServices(builder.Configuration);
 
 var app = builder.Build();
 
@@ -32,6 +32,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
 // Add Serilog request logging
 app.UseSerilogRequestLogging();
 
@@ -59,17 +60,18 @@ app.UseSecurityHeaders(policies => policies
     .AddCustomHeader("Cache-Control", "no-store, no-cache, must-revalidate, private")
 );
 
-//Global exception handling
+// Global exception handling
 
-// Core middLewares
+// Core middlewares
 app.UseHttpsRedirection();
-app.UserCors("DefaultCorsPolicy");
- //   app.UserRateLimiter();
- //   app.UserAuthentication();
- //   app.UserAuthorization();
-app.MapControllers();
-app.MapHelthChechks("/health");
+app.UseCors("DefaultCorsPolicy");
+//app.UseRateLimiter();
+//app.UseAuthentication();
+//app.UseAuthorization();
 
+app.MapControllers();
+
+app.MapHealthChecks("/health");
 
 app.MapGet("/health", () =>
 {
@@ -78,7 +80,7 @@ app.MapGet("/health", () =>
         status = "Healthy",
         timestamps = DateTime.UtcNow.ToString("yyyy-MM-ddTHH:mm:ss.fffZ")
     };
-    return Results.ok(response);
+    return Results.Ok(response);
 });
 
 // Startup log: addresses and health endpoint
@@ -136,3 +138,4 @@ using (var scope = app.Services.CreateScope())
 }
 
 app.Run();
+

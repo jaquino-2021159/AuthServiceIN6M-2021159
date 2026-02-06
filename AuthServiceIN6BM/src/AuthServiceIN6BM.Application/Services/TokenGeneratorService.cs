@@ -20,6 +20,5 @@ public static class TokenGeneratorService
         var bytes = new byte[length];
         rng.GetBytes(bytes);
         return Convert.ToBase64String(bytes).Replace("+", "-").Replace("/", "_").Replace("=", "");
-        
     }
 }

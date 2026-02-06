@@ -1,7 +1,7 @@
-
 using AuthServiceIN6BM.Application.Interfaces;
 
 namespace AuthServiceIN6BM.Api.Models;
+
 public class FormFileAdapter : IFileData
 {
     private readonly IFormFile _formFile;
@@ -13,7 +13,7 @@ public class FormFileAdapter : IFileData
         _formFile = formFile;
     }
 
-    public byte [] Data
+    public byte[] Data
     {
         get
         {
@@ -26,8 +26,8 @@ public class FormFileAdapter : IFileData
             return _data;
         }
     }
+
     public string ContentType => _formFile.ContentType;
     public string FileName => _formFile.FileName;
     public long Size => _formFile.Length;
 }
-    

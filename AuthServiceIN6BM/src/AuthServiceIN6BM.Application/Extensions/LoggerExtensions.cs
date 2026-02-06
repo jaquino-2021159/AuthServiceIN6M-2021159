@@ -15,7 +15,7 @@ public static partial class LoggerExtensions
     [LoggerMessage(
         EventId = 1002,
         Level = LogLevel.Information,
-        Message = "User login succeded"
+        Message = "User login succeeded"
     )]
     public static partial void LogUserLoggedIn(this ILogger logger);
 
@@ -31,21 +31,19 @@ public static partial class LoggerExtensions
         Level = LogLevel.Warning,
         Message = "Registration rejected: email already exists"
     )]
-    public static partial void LogRegistractionWithExistingEmail(this ILogger logger);
+    public static partial void LogRegistrationWithExistingEmail(this ILogger logger);
 
     [LoggerMessage(
-    EventId = 1005,
-    Level = LogLevel.Warning,
-    Message = "Registration rejected: username already exists"
+        EventId = 1005,
+        Level = LogLevel.Warning,
+        Message = "Registration rejected: username already exists"
     )]
-    public static partial void LogRegistractionWithExistingUsername(this ILogger logger);
-
+    public static partial void LogRegistrationWithExistingUsername(this ILogger logger);
 
     [LoggerMessage(
-    EventId = 1006,
-    Level = LogLevel.Error,
-    Message = "Error uploading profile image"
+        EventId = 1006,
+        Level = LogLevel.Error,
+        Message = "Error uploading profile image"
     )]
     public static partial void LogImageUploadError(this ILogger logger);
 }
-

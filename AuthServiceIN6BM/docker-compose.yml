@@ -7,10 +7,10 @@ services:
       restart: always
       environment:
         POSTGRES_DB: KinalSportsIN6BM
-        POSTGRES_USER: admin
+        POSTGRES_USER: root
         POSTGRES_PASSWORD: admin
       ports:
-        - "5436:5432"
+       - "5436:5432"
       volumes:
         - postgres_data:/var/lib/postgressql/data
 
